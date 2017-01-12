@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookmark App | Home</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body onload="getBookmarks()">
+	<div class="container">
+		<header>
+			<h2 class="text-center">Bookmark App</h2>
+			<hr>
+		</header>
+		<section>
+			<div class="jumbotron">
+				<div class="text-center">
+					<h3>Bookmark Your Favorite Sites</h3> <br>
+					<form id="myForm">
+						<div class="form-group">
+							<label>Website Name</label>
+							<input type="text" class="form-control" placeholder="Enter Website Name" id="siteName">
+						</div>
+						<div class="form-group">
+							<label>Website URL</label>
+							<input type="text" class="form-control" placeholder="Enter Website URL" id="siteUrl"> 
+						</div>
+						<button class="btn btn-lg btn-primary" type="submit">
+							Submit
+						</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="col-md-12">
+				<div id="bookmarkResults">
+
+				</div>		
+			</div>
+		</section>
+		<footer>
+			<div class="text-center">
+				Copyright &copy, 2017
+			</div>
+			<hr>
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
